@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>URL/Path Extractor- Walid</title>
+<style>
+  body { width: 420px; font-family: -apple-system, Arial, sans-serif; padding: 10px; }
+  h1 { font-size: 14px; margin: 0 0 8px; }
+  #status { font-size: 12px; color: #555; margin-bottom: 6px; }
+  #controls { display: flex; gap: 6px; margin-bottom: 8px; }
+  button { font-size: 12px; padding: 4px 8px; cursor: pointer; }
+  #results { height: 320px; overflow-y: auto; border: 1px solid #ccc; padding: 4px; font-size: 11px; }
+  #results div { padding: 2px 0; border-bottom: 1px solid #eee; word-break: break-all; }
+  #count { font-weight: bold; }
+</style>
+</head>
+<body>
+  <h1>JS Path / URL Extractor - By Walid</h1>
+  <div id="status">Idle</div>
+  <div id="controls">
+    <button id="run">Scan Page</button>
+    <button id="copy">Copy All</button>
+    <button id="download">Download .txt</button>
+  </div>
+  <div>Found: <span id="count">0</span></div>
+  <div id="results"></div>
+  <script src="popup.js"></script>
+</body>
+</html>
